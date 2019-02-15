@@ -48,7 +48,7 @@ server.get("/api/projects/:id", (req, res) => {
   server.get("/api/projects/actions/:id", (req, res) => {
     const { id } = req.params;
   
-    projectSb
+    projectDb
     .get(id)
       .then(project => {
         if (project) {
